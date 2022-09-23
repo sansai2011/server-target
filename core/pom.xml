@@ -44,6 +44,7 @@
                         <configuration>
                             <bnd><![CDATA[
 Import-Package: javax.annotation;version=0.0.0,*
+-includeresource: target-java-sdk-2.3.1.jar;lib:=true,unirest-java-3.11.02.jar;lib:=true,json-logic-java-1.0.5.jar;lib:=true,ecid-service-1.0.3.jar;lib:=true,httpcore-nio-4.4.15.jar;lib:=true,httpasyncclient-4.1.5.jar;lib:=true
                                 ]]></bnd>
                         </configuration>
                     </execution>
@@ -140,5 +141,41 @@ Import-Package: javax.annotation;version=0.0.0,*
             <version>1.4.4</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.adobe.target</groupId>
+            <artifactId>target-java-sdk</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.konghq/unirest-java -->
+        <dependency>
+            <groupId>com.konghq</groupId>
+            <artifactId>unirest-java</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.github.jamsesso/json-logic-java -->
+        <dependency>
+            <groupId>io.github.jamsesso</groupId>
+            <artifactId>json-logic-java</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.adobe.experiencecloud.ecid/ecid-service -->
+        <dependency>
+            <groupId>com.adobe.experiencecloud.ecid</groupId>
+            <artifactId>ecid-service</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore-nio -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore-nio</artifactId>
+        </dependency>
+
+        <dependency>
+            <artifactId>httpcore-nio</artifactId>
+            <groupId>org.apache.httpcomponents</groupId>
+            <scope>provided</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpasyncclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpasyncclient</artifactId>
+        </dependency>
+
     </dependencies>
 </project>
